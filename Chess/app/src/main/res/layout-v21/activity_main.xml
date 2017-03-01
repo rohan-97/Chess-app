@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rohan.chess.MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/br"
+                android:tag="01br" />
+
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bn"
+                android:tag="02bh" />
+
+            <ImageView
+                android:id="@+id/i3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bb"
+                android:tag="03bb" />
+
+            <ImageView
+                android:id="@+id/i4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bq"
+                android:tag="04bq" />
+
+            <ImageView
+                android:id="@+id/i5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bk"
+                android:tag="05bk" />
+
+            <ImageView
+                android:id="@+id/i6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bb"
+                android:tag="06bb" />
+
+            <ImageView
+                android:id="@+id/i7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bn"
+                android:tag="07bh" />
+
+            <ImageView
+                android:id="@+id/i8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/br"
+                android:tag="08br" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bp"
+                android:tag="09bp" />
+
+            <ImageView
+                android:id="@+id/i10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bp"
+                android:tag="10bp" />
+
+            <ImageView
+                android:id="@+id/i11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bp"
+                android:tag="11bp" />
+
+            <ImageView
+                android:id="@+id/i12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bp"
+                android:tag="12bp" />
+
+            <ImageView
+                android:id="@+id/i13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="13bp"
+                android:src="@drawable/bp" />
+
+            <ImageView
+                android:id="@+id/i14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bp"
+                android:tag="14bp" />
+
+            <ImageView
+                android:id="@+id/i15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bp"
+                android:tag="15bp" />
+
+            <ImageView
+                android:id="@+id/i16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/bp"
+                android:tag="16bp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i17"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="17" />
+
+            <ImageView
+                android:id="@+id/i18"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="18" />
+
+            <ImageView
+
+                android:id="@+id/i19"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="19"/>
+
+            <ImageView
+                android:id="@+id/i20"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="20" />
+
+            <ImageView
+                android:id="@+id/i21"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="21" />
+
+            <ImageView
+                android:id="@+id/i22"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="22" />
+
+            <ImageView
+                android:id="@+id/i23"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="23" />
+
+            <ImageView
+                android:id="@+id/i24"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="24" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i25"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="25" />
+
+            <ImageView
+                android:id="@+id/i26"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="26" />
+
+            <ImageView
+                android:id="@+id/i27"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="27" />
+
+            <ImageView
+                android:id="@+id/i28"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="28" />
+
+            <ImageView
+                android:id="@+id/i29"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="29" />
+
+            <ImageView
+                android:id="@+id/i30"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="30" />
+
+            <ImageView
+                android:id="@+id/i31"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="31" />
+
+            <ImageView
+                android:id="@+id/i32"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="32" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i33"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="33" />
+
+            <ImageView
+                android:id="@+id/i34"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="34" />
+
+            <ImageView
+                android:id="@+id/i35"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="35" />
+
+            <ImageView
+                android:id="@+id/i36"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="36" />
+
+            <ImageView
+                android:id="@+id/i37"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="37" />
+
+            <ImageView
+                android:id="@+id/i38"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="38" />
+
+            <ImageView
+                android:id="@+id/i39"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="39" />
+
+            <ImageView
+                android:id="@+id/i40"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="40" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i41"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="41" />
+
+            <ImageView
+                android:id="@+id/i42"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="42" />
+
+            <ImageView
+                android:id="@+id/i43"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="43" />
+
+            <ImageView
+                android:id="@+id/i44"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="44" />
+
+            <ImageView
+                android:id="@+id/i45"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="45" />
+
+            <ImageView
+                android:id="@+id/i46"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="46" />
+
+            <ImageView
+                android:id="@+id/i47"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="47" />
+
+            <ImageView
+                android:id="@+id/i48"
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:tag="48" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i49"
+                android:layout_column="0"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="49wp" />
+
+            <ImageView
+                android:id="@+id/i50"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="50wp" />
+
+            <ImageView
+                android:id="@+id/i51"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="51wp" />
+
+            <ImageView
+                android:id="@+id/i52"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="52wp" />
+
+            <ImageView
+                android:id="@+id/i53"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="53wp" />
+
+            <ImageView
+                android:id="@+id/i54"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="54wp" />
+
+            <ImageView
+                android:id="@+id/i55"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="55wp" />
+
+            <ImageView
+                android:id="@+id/i56"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wp"
+                android:tag="56wp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/i57"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="0"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wr"
+                android:tag="57wr" />
+
+            <ImageView
+                android:id="@+id/i58"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wn"
+                android:tag="58wh" />
+
+            <ImageView
+                android:id="@+id/i59"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wb"
+                android:tag="59wb" />
+
+            <ImageView
+                android:id="@+id/i60"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="3"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wq"
+                android:tag="60wq" />
+
+            <ImageView
+                android:id="@+id/i61"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="4"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wk"
+                android:tag="61wk" />
+
+            <ImageView
+                android:id="@+id/i62"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="5"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wb"
+                android:tag="62wb" />
+
+            <ImageView
+                android:id="@+id/i63"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="6"
+                android:background="#bebebe"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wn"
+                android:tag="63wh" />
+
+            <ImageView
+                android:id="@+id/i64"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_column="7"
+                android:background="#ffffff"
+                android:contentDescription="@string/blank"
+                android:onClick="myfunc"
+                android:src="@drawable/wr"
+                android:tag="64wr" />
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>
